@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+</head>
+
+<body onload="init()">
+  <h1>You pressed the "save path" button!</h1>
+  <div id="nav"></div>
+  <button onclick="window.location.href='http://192.168.150.248:8000/map/';">Map</button>
+  <form action="/repeat_saved_path/" method="post">
+    <button type="submit" name="" value="">Repeat saved path</button>
+  </form>
+  <form action="/do_not_repeat_saved_path/" method="post">
+    <button type="submit" name="" value="">Don't repeat saved path</button>
+  </form>
+  <form action="/back_to_home/" method="post">
+    <button type="submit" name="" value="">Back to home</button>
+  </form>
+</body>
+</html>
